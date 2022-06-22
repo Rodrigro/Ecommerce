@@ -1,0 +1,19 @@
+.botones{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.conenedorBotones{
+    margin-top: 20px;
+}
+.botoncito{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.casilla{
+    height: 20px;
+}
