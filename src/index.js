@@ -5,7 +5,6 @@ import reportWebVitals from './reportWebVitals';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Contenido from './components/Contenido';
-import Boton_comprar from './components/Boton_comprar';
 import ItemCount from './components/ItemCount';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -16,9 +15,11 @@ root.render(
   <React.StrictMode>
     <Header />
     <Navbar />
-    <Contenido />    
+    <Contenido />
+    <br/>
+    <br/>
+    <br/>    
     <ItemCount stock={6} />
-    <Boton_comprar />
   </React.StrictMode>
 );
 

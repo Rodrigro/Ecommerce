@@ -1,25 +1,34 @@
 import '../components/Contenido.css'
+import Card from '../components/Card'
+import { useEffect } from 'react';
+import { useState } from 'react';
 //import img01 from '../assets/img/img01.jpg'
 
 function Contenido() {
-    
-        return (
-          <div className="contenido container-xl">
+  
+ // const [info, setInfo] =useState ([])
+ // OTRA OPCION PARA LINEA 28 {info && info.map(i => <Card product={i.nombre} price={i.price} />)}
+  const [info, setInfo] =useState ([])
+
+
+  useEffect(()=>{
+    fetch('data.json')
+    .then( (resp )  => resp.json())
+    .then((data)=> setInfo(data))
+
+  }, [])
+  
+  return (
+          <section className="contenido">
+            <div>
             <h2>Bienvenidos a Click Ofertas</h2>
-            <div className="contenidoProductos">
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-
-
-
+            <p>Selecciona tu Producto y obtenes la mejor OFERTA!!</p>
             </div>
+            <div className='listado'>
+            {info.map(i => <Card product={i.nombre} price={i.price} imgurl={i.imgurl}/>)}
             
-           
-          </div> 
+            </div>
+          </section> 
         );
       }
     

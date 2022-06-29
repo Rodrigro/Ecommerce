@@ -46,7 +46,7 @@ function ItemCount({stock}) {
         setNum(0)
     }
     const mostrar = () => {
-        console.log ("CULO", num);
+        console.log ("mostrar num", num);
     }
     return (
      <div className=" conenedorBotones container-xl">

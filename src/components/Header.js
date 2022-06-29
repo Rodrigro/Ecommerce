@@ -5,7 +5,7 @@ function Header() {
     
         return (
           <div className=" cabecera container-xl">
-            <img className="" src={img01}/>
+            <img className="cabe-logo" src={img01}/>
           </div> 
         );
       }

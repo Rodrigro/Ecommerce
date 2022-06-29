@@ -1,5 +1,11 @@
-* { 
+.contenido{
+    font-size: 15px;
     text-align: center;
-    font-size: 9px;
     
+}
+.listado{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 }
