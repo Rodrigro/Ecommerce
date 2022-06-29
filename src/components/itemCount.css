@@ -1,20 +1,22 @@
 .botones{
     display: inline-flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
 
 }
-    
-    
-    
 
+.botoncito{
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
 
-
-
-.input_text{
-    width: 200px;
+.casilla{
     height: 20px;
-    color: blue;
-    font-size: large;
-    font-weight: 700;
 }

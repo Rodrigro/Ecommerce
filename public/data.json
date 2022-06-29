@@ -1,0 +1,93 @@
+[
+    {
+        "id": 1,
+        "product": "El mejor Tv",
+        "nombre": "Tv Samsung",
+        "category": "Televisores",
+        "price": "$133.000",
+        "imgurl": "./products/tv.png"
+
+
+    },
+    {
+        "id": 2,
+        "product": "Notebook Acer",
+        "nombre": "Notebook Acer 17'",
+        "category": "Computadoras",
+        "price": "$160.000",
+        "imgurl": "./products/notebook.png"
+
+
+},
+{
+    "id": 3,
+    "product": "Cafetera Moulinex",    
+    "nombre": "Cafetera",
+    "category": "Electrodomestico",
+    "price": "$10.000",
+    "imgurl": "./products/cafetera.png"
+
+
+},
+{
+    "id": 1,
+    "product": "Auriculares Gamers",
+    "nombre": "Logitech Auriculares ",
+    "category": "Gamming",
+    "price": "$13.000",
+    "imgurl": "./products/monopatin.png"
+
+
+},
+{
+    "id": 2,
+    "product": "Iphone x25",
+    "nombre": "Iphone x25",
+    "category": "Telefonia",
+    "price": "$560.000",
+    "imgurl": "./products/iphone.png"
+
+
+},
+{
+"id": 3,
+"product": "Lavaropa Dream",    
+"nombre": "Lavaropa Dream",
+"category": "Electrodomesticos",
+"price": "$200.000",
+"imgurl": "./products/lavaropa.png"
+
+}
+,
+{
+    "id": 3,
+    "product": "Heladera Electrolux",    
+    "nombre": "Heladera No Frost Electrolux",
+    "category": "Electrodomesticos",
+    "price": "$270.000",
+    "imgurl": "./products/helader-blanca.png"
+    
+    
+    },
+{
+    "id": 3,
+    "product": "Heladera Gafa",    
+    "nombre": "Heladera Gafa No Frost",
+    "category": "Electrodomesticos",
+    "price": "$450.000",
+    "imgurl": "./products/heladera-gris.png"
+        
+        
+},
+    {
+    "id": 3,
+    "product": "Horno Electrico",    
+    "nombre": "Horno Electrico Lg",
+    "category": "Electrodomesticos",
+    "price": "$20.000",
+    "imgurl": "./products/microondas.png"
+            
+            
+}
+
+]

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import '../components/itemCount.css';
-import Swal from 'sweetalert2';
+import Swal from 'sweetalert2'; 
+import Button from 'react-bootstrap/Button'
 
 
 
@@ -45,18 +46,18 @@ function ItemCount({stock}) {
         setNum(0)
     }
     const mostrar = () => {
-        console.log ("CULO", num);
+        console.log ("mostrar num", num);
     }
     return (
-     <div className="botones">
-        <button onClick={suma}>+</button>
-        <input  type="number" value={num}/>
-        <button onClick={resta}>-</button>
-        <button onClick={clear}>Borrar</button>
-        <button onClick={clear}>Añadir</button>
-        <button onClick={mostrar}> { num >0 ? `Añadir ` : `Selecciona la Cantidad` }</button>
-        <p> {stock > 1 ? ` ${ stock} unidades disponibles` : `${stock} unidad disponible`}</p>
-       
+     <div className=" conenedorBotones container-xl">
+        <Button className="botoncito" variant="success"onClick={suma}>+</Button>{' '}
+        <input className="casilla" type="number" value={num}/>
+        <Button className="botoncito" variant="success" onClick={resta}>-</Button>
+        <div>
+        <Button className="botoncito" variant="success" onClick={clear}>Borrar</Button>
+        <Button className="botoncito" variant="success" onClick={mostrar}> { num >0 ? `Añadir ` : `Selecciona la Cantidad` }</Button>
+        <p>{stock > 1 ? ` ${ stock}  unidades disponibles` : `${stock} unidad disponible`}</p>
+        </div>
      </div>   
     )
 }

@@ -1,9 +1,5 @@
-img{
-    display: flex;
-    
-}
-@media  (max-width: 1200px) {
-    img {
-      width: 100%;
-    }
-  }
+.cabe-logo {
+  width: 110%;
+  position:sticky
+} 
+
